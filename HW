@@ -1,0 +1,752 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Directions for 1 - 4.  Walkthrough the following code and figure out what the code will produce.  After you have done it on paper, then check your results in Python (where applicable)."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1. \n",
+    "What will the following code produce?\n",
+    "\n",
+    "x = 3   \n",
+    "x = 9   \n",
+    "x = 12   \n",
+    "   \n",
+    "print(x + x + x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "36"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "12 + 12 +12 "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2.  \n",
+    "What is wrong with the following script?\n",
+    "\n",
+    "cats = 1   \n",
+    "_cats = 2    \n",
+    "_cats2 = 3   \n",
+    "2cats = 4   \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "starts with a number\n",
+    "2cats----identifier can not start with a number"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 3.  \n",
+    "Executing the following code will throw an error.  Explain why?\n",
+    "\n",
+    "a = 1   \n",
+    "b = 2   \n",
+    "print(a == b)   \n",
+    "print(b == c)   "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Since a is not equal to b "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "c is not defined"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 4.  \n",
+    "Fix the last line so that it outputs the sum of 1 and 2.\n",
+    "Please do not change the first two line.  Only the last one\n",
+    "\n",
+    "a = \"1\"   \n",
+    "b = 2   \n",
+    "print(a + b)   \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "a='1'\n",
+    "b=2\n",
+    "print(int(a)+b)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 5.  \n",
+    "Show the sequence of numbers that would be produced by the following expression:\n",
+    "\n",
+    "listrange(20, 2, -10)   "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "20, 10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[20, 10]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(range(20, 2, -10) )"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**For items 6, evaluate the following string expressions on paper.**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 6.  \n",
+    "\n",
+    "s1 = \"circumference\"   \n",
+    "s2 = \"pi\"   \n",
+    "\n",
+    "a. 3 * s1 + 2 * s2   \n",
+    "b.  s1 + \"and the Knights of the Round Table\"   \n",
+    "c.  s1[1]   \n",
+    "d.  s1[1:5]   \n",
+    "e.  s2[1:5]   \n",
+    "f.  s2[1] + s1[:2]   \n",
+    "g.  s1 + s2[-1]   \n",
+    "h.  s1.title()   \n",
+    "i.  s2.upper().ljust(4) * 3  "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "a. circumferencecircumferencecircumferecpipi   \n",
+    "b. circumferenceand the Knights of the Round Table    \n",
+    "c. i #indexing   \n",
+    "d. ircu #slicing   \n",
+    "e. i #when we do out of range slicing it's not an error but out of range characetr its an error   \n",
+    "f. ici    ----> [:a] python will assume to start from the beginning and go up to but not including the positive given after the colon   \n",
+    "g. circumferencei (-1 gives the last element whereas -2 gives the second to last element)    \n",
+    "h. Circumference    \n",
+    "i. PI    PI    PI  ---take s2 make it upper case then left justify it and do the whole 'Pi    ' to 3 times\n",
+    "\n",
+    "left justify alligns to left"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'PI  PI  PI  '"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1 = \"circumference\"\n",
+    "s2 = \"pi\"\n",
+    "\n",
+    "s2.upper().ljust(4) * 3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 7.  \n",
+    "Show a python expression that could construct each of the following results by performing string operations on `s1` and `s2`   \n",
+    "\n",
+    "s1 = \"spam\"   \n",
+    "s2 = \"ni!\"   \n",
+    "\n",
+    "a.  \"NI\"   \n",
+    "b.  \"ni!spamni!\"   \n",
+    "c.  \"Spam Ni! Spam Ni! Spam Ni! \"   \n",
+    "d.  \"spam\"   \n",
+    "e.  [\"sp\", \"m\"]   \n",
+    "f.  \"smp\"   "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "a. s2.upper()[:2]   \n",
+    "b. s2+s1+s2    \n",
+    "c. (s1.title()+ ' '+ s2.title()+ ' ') * 3    \n",
+    "d. s1    \n",
+    "e. s1.split('a')    \n",
+    "f. s1[0]+s1[3]+s1[1]    \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 8.  \n",
+    "Show the string that would result from each of the following string formatting operations.  If the operation isn't legal, explain why.   \n",
+    "   \n",
+    "a. \"Looks like {1} and {0} for breakfast\".format(\"eggs\", \"bacon\")   \n",
+    "b. \"{0:0.2f} {0:0.2f}\".format(2.3, 2.3466)   \n",
+    "c. \"{7.5f} {7.5f}\".format(2.3, 2.3466)   \n",
+    "d. \"Time left {0:0.2f}:{1:05.2f}\".format(1, 37.374)   \n",
+    "e. \"{1:3}\".format{\"14\"}   \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Looks like bacon and eggs for breakfast'"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"Looks like {1} and {0} for breakfast\".format(\"eggs\", \"bacon\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'2.30 2.30'"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " \"{0:0.2f} {0:0.2f}\".format(2.3, 2.3466)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "tuple index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-86-05344832f757>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0;34m\"{7.5f} {7.5f}\"\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mformat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m2.3\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m2.3466\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;31m#no value before the colon so there's no positional argument\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m: tuple index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "\"{7.5f} {7.5f}\".format(2.3, 2.3466) #no value before the colon so there's no positional argument"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Time left 1.00:37.37'"
+      ]
+     },
+     "execution_count": 98,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"Time left {0:0.2f}:{1:05.2f}\".format(1, 37.374) #05 is padding so takes 5 decimal places"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-77-934139d2889a>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-77-934139d2889a>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    \"{1:3}\".format{\"14\"}\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"{1:3}\".format{\"14\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 9.  \n",
+    "Complete the script so that it prints out the third character\n",
+    "from the string `weather` using indexing.\n",
+    "\n",
+    "weather = \"The three day forecast shows a mostly sunny week ahead\" \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'e'"
+      ]
+     },
+     "execution_count": 85,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "weather = \"The three day forecast shows a mostly sunny week ahead\"\n",
+    "weather[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 10.  \n",
+    "Use the string method index() to locate the position of the substring `sunny`.\n",
+    "\n",
+    "weather = \"The three day forecast shows a mostly sunny week ahead\" \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "38"
+      ]
+     },
+     "execution_count": 79,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "weather = \"The three day forecast shows a mostly sunny week ahead\"\n",
+    "weather.index('sunny')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 11.  \n",
+    "Complete the script so that it prints out the substring `sunny`from the string `weather` using slicing. Make sure to print 'sunny' in uppercase.\n",
+    "\n",
+    "\n",
+    "weather = \"The three day forecast shows a mostly sunny week ahead\" \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'SUNNY'"
+      ]
+     },
+     "execution_count": 100,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "weather = \"The three day forecast shows a mostly sunny week ahead\"\n",
+    "weather[38:43].upper()\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 12.  \n",
+    "Have python print the string `weather` in reverse.\n",
+    "\n",
+    "weather = \"The three day forecast shows a mostly sunny week ahead\" "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'daeha keew ynnus yltsom a swohs tsacerof yad eerht ehT'"
+      ]
+     },
+     "execution_count": 106,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "weather = \"The three day forecast shows a mostly sunny week ahead\"\n",
+    "weather[: :-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 13.  \n",
+    "Write a python program to print the following string in the specified format (ignore the change in font type):\n",
+    "\n",
+    "Twinkle, twinkle, little star,\n",
+    "\n",
+    "\tHow I wonder what you are!\n",
+    "\n",
+    "\t\tUp above the world so high,\n",
+    "\n",
+    "\t\tLike a diamond in the sky.\n",
+    "\n",
+    "Twinkle, twinkle, little star,\n",
+    "\n",
+    "\tHow I wonder what you are!\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Twinkle, twinkle, little star,\n",
+      "\tHow I wonder what you are\n",
+      "\t\tUp above the world so high,\n",
+      "\t\tLike a diamond in the sky.\n",
+      "Twinkle, twinkle, little star,\n",
+      "\tHow I wonder what you are\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Twinkle, twinkle, little star,\\n\\tHow I wonder what you are\\n\\t\\tUp above the world so high,\\n\\t\\tLike a diamond in the sky.\\nTwinkle, twinkle, little star,\\n\\tHow I wonder what you are')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 14.\n",
+    "\n",
+    "Write a program that ask the the user to input two coordinates (with no parentheses) and determin the distance between the two points using the distance formula below:\n",
+    "\n",
+    "$$ d = \\sqrt {\\left( {x_1 - x_2 } \\right)^2 + \\left( {y_1 - y_2 } \\right)^2 } $$\n",
+    "\n",
+    "\n",
+    "\n",
+    "HINT: you will need to import the `math` package as the first line of your cell so you can use the sqrt function using the code below:      \n",
+    "<div align=\"center\"> from math import sqrt </div>\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x1:7\n",
+      "x2:5\n",
+      "y1:9\n",
+      "y2:2\n",
+      "7.280109889280518\n"
+     ]
+    }
+   ],
+   "source": [
+    "from math import sqrt\n",
+    "\n",
+    "x1=float(input(\"x1:\"))\n",
+    "x2=float(input(\"x2:\"))\n",
+    "y1=float(input(\"y1:\"))\n",
+    "y2=float(input(\"y2:\"))\n",
+    "\n",
+    "distance= sqrt((x2-x1)**2+(y2-y1)**2)\n",
+    "\n",
+    "print(distance)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 15.  \n",
+    "Write a python program that produces the following output:\n",
+    "\n",
+    "<div align=\"center\"> [25, 30, 35, 40, 45, 50, 55, 60, 65, 70] </div>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[25, 30, 35, 40, 45, 50, 55, 60, 65, 70]\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1=[*range(25,75,5)]\n",
+    "print(list1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 16.\n",
+    "\n",
+    "Write python code to return the middle 5 characters from the following string:\n",
+    "\n",
+    "my_string = \"Get one month of free service.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_string= \"Get one month of free service.\"\n",
+    "len(my_string)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " of f\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = my_string[13:18]\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 17.\n",
+    "\n",
+    "Write python code to count the number of times the letter 'o' appears in the following string:\n",
+    "\n",
+    "my_string = \"What is your favorite show?\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_string = \"What is your favorite show?\"\n",
+    "x= my_string.count('o')\n",
+    "print(x)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
